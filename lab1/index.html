@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Hello, world" />
+    <meta name="author" content="Ahmed Essam" />
+    <meta
+      name="description"
+      content="This is a representation on what we have learned so far in HTML in Lab1"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="large-easy-distinguish-cc5a0d56fe6fc_856.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hello, world</title>
+  </head>
+  <body>
+    <!-- 3.styling my text -->
+    <div>
+      <h3>What is <em>HTML</em>?</h3>
+      <p>
+        <strong>HTML</strong> stands for <b>Hyper Text Markup Language</b>, and
+        it's the descriptive language used to descripe the bare bone of our web
+        pages and It used to make the main <mark>structure</mark> of our
+        application. and It's used instead of all other Approaches or
+        <del>inventions</del> every company makes to represent its own
+        <ins>application</ins>.
+      </p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- 4. differences between different inline tags -->
+    <div>
+      <h3>Differences between inline tags</h3>
+      <p>
+        <mark>Hint</mark>, to reach the answer you have to click on the summary
+        (ex: [b, strong])
+      </p>
+      <details>
+        <summary>[b, strong]</summary>
+        <ul>
+          <li>
+            <mark>b</mark> is used for the purpose of styling but has no meaning
+            to the SEO
+          </li>
+          <li>
+            on the other hand <mark>strong</mark> tag is used for styling but
+            also represent a special meaning to the word in it and have to do
+            with SEO
+          </li>
+        </ul>
+      </details>
+      <hr />
+      <details>
+        <summary>[i, em]</summary>
+        <ul>
+          <li>
+            <mark>i</mark> is used for the purpose of styling but has no meaning
+            to the SEO
+          </li>
+          <li>
+            on the other hand <mark>em</mark> tag is used for styling but also
+            represent a special meaning to the word in it and have to do with
+            SEO as it's used to put more stress on a word as It has a semantic
+            importance and improving accessibility.
+          </li>
+        </ul>
+      </details>
+      <hr />
+      <details>
+        <summary>[s, [del, ins]]</summary>
+        <ul>
+          <li>
+            <mark>s</mark> (strikethrough), or a line through it. used to
+            represent things that are no longer relevant or no longer accurate.
+          </li>
+          <li>
+            However, <mark>s</mark> is not appropriate when indicating document;
+            for that we should use the <mark>del</mark> and
+            <mark>ins</mark> elemnts.
+          </li>
+        </ul>
+      </details>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <!-- 5. making a pragraph with a title -->
+
+    <p title="this is a pragraph">
+      we can now make a pragraph when hovering over it, you should see something
+      :)
+    </p>
+
+    <hr />
+    <br />
+    <br />
+    <!-- 6. making a special list  -->
+
+    <div>
+      <ol type="I">
+        <li>List Item 1</li>
+        <ol type="a">
+          <li>Nested item 1.1</li>
+          <li>Nested item 1.2</li>
+        </ol>
+        <li>List Item 2</li>
+        <ol type="1">
+          <li>Nested item 2.1</li>
+          <li>Nested item 2.2</li>
+          <ul class="list-hollow">
+            <li>Nested item 2.2.1</li>
+            <li>Nested item 2.2.2</li>
+
+            <ul class="list-square">
+              <li>Nested item 2.2.2.1</li>
+              <li>Nested item 2.2.2.2</li>
+            </ul>
+            <li>Nested item 2.2.3</li>
+          </ul>
+          <li>Nested item 2.3</li>
+        </ol>
+        <li>List Item 3</li>
+        <ul class="list-disc">
+          <li>Nested item 3.1</li>
+          <li>Nested item 3.1</li>
+          <li>Nested item 3.1</li>
+        </ul>
+      </ol>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- 7. the table -->
+    <table border="1">
+      <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+      </tr>
+      <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+      </tr>
+      <tr>
+        <th>Begin</th>
+        <th>End</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2">8:00 a.m.</td>
+        <td rowspan="2">5:00 p.m.</td>
+        <td style="text-align: center">Introduction to XML</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Validity: DTD and Relax NG</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Tuesday</td>
+        <td>8:00 a.m.</td>
+        <td>11:00 a.m.</td>
+        <td rowspan="1.5" style="text-align: center">XPath</td>
+      </tr>
+
+      <tr>
+        <td>11:00 a.m.</td>
+        <td>2:00 p.m.</td>
+        <td rowspan="2" style="text-align: center">XSL Transformations</td>
+      </tr>
+      <tr>
+        <td>2:00 p.m.</td>
+        <td>5:00 p.m.</td>
+      </tr>
+      <tr>
+        <td rowspan="1">Wednesday</td>
+        <td>8:00 a.m.</td>
+        <td>12:00 p.m.</td>
+        <td style="text-align: center">XSL Formatting Objects</td>
+      </tr>
+    </table>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- links in the same page and one in another page -->
+
+    <div>
+      <a href="https://www.youtube.com" title="in the same page">youtube</a>
+
+      <hr />
+
+      <a href="https://www.facebook.com" target="_blank" title="in another page"
+        >facebook</a
+      >
+    </div>
+
+    <!-- Images using relative path and url -->
+
+    <hr />
+    <br />
+    <br />
+
+    <div>
+      <img
+        src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+        alt="a cat"
+        height="200"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <img
+        src="chat-midjourney-750x375.webp"
+        alt="a cat with the relative path"
+        height="200"
+        width="200"
+      />
+    </div>
+
+    <!-- make an image as alink -->
+
+    <div>
+      <p>click on the image below to go to your destination</p>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        title="click on the image to visit instagram"
+      >
+        <img
+          src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg"
+          alt=""
+          height="200"
+          width="200"
+        />
+      </a>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- embed a youtube video -->
+
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/xk4_1vDrzzo?si=22fhzt9t5JCrkO-p"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+
+    <!-- making the video and audio tags -->
+
+    <div>
+      <video width="720" height="480" controls>
+        <source src="video.mp4" type="video/mp4" />
+        <source src="video.webm" type="video/webm" />
+      </video>
+
+      <br />
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        <source src="audio.ogg" type="audio/ogg" />
+      </audio>
+    </div>
+  </body>
+</html>
