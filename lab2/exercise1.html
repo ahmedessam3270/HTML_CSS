@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2 / Exercise 1</title>
+    <style>
+      header {
+        margin-bottom: 2rem;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Return to the main page</h2>
+      <a href="index.html">-> Main Page</a>
+    </header>
+    <!-- Exercise 1: Form -->
+    <form action="" method="post">
+      <input type="text" name="username" id="username" value="Ahmed Essam" />
+      <br />
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter your password..."
+      />
+      <br />
+      <br />
+      <input
+        type="password"
+        name="confirmPassword"
+        id="confirmPassword"
+        placeholder="confirm your password..."
+      />
+      <br />
+      <br />
+      <input
+        type="tel"
+        name="phoneNumber"
+        id="phoneNumber"
+        value="+201**********"
+      />
+      <br />
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="enter your email..."
+      />
+      <br />
+      <br />
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <br />
+      <br />
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <br />
+      <input type="date" name="birthDate" id="birthDate" />
+      <br />
+      <br />
+      <p>Do you like this lab?</p>
+      <input type="radio" name="likeLab" id="like" value="yes" checked />
+      <label for="like">Yes</label>
+      <input type="radio" name="likeLab" id="dislike" value="no" />
+      <label for="dislike">No</label>
+      <br />
+      <br />
+      <p>How do you rate this session?</p>
+      <!-- I wanted to show the value of the input:range -->
+      <!-- so I have to use events and javascript unfortunately :) -->
+      <input
+        type="range"
+        name="rateSession"
+        id="rateSession"
+        min="1"
+        max="10"
+        value="10"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output>10</output>
+      <br />
+      <br />
+      <p>pick your favourite color?</p>
+      <select name="color" id="color">
+        <option hidden>color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+      <br />
+      <br />
+
+      <p>Please provide us with your feedback.</p>
+      <textarea
+        name="feedback"
+        id="feedback"
+        cols="30"
+        rows="10"
+        style="resize: none"
+      ></textarea>
+
+      <br />
+      <br />
+      <p>please attach the your resume here.</p>
+      <input
+        type="file"
+        name="resumeUploader"
+        id="resumeUploader"
+        accept=".pdf,.doc,.docx"
+      />
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        name="favLanguage"
+        id="arabic"
+        value="arabic"
+        checked
+      />
+      <label for="arabic">Arabic</label>
+      <input type="checkbox" name="favLanguage" id="english" value="english" />
+      <label for="english">English</label>
+      <input type="checkbox" name="favLanguage" id="spanish" value="spanish" />
+      <label for="spanish">Spanish</label>
+      <br />
+      <br />
+      <input type="hidden" name="hiddenInput" value="hiddenValue" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

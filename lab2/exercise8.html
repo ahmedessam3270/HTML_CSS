@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2 / Box Model Demo</title>
+    <style>
+      .container {
+        max-width: 90%;
+        margin: 2rem auto;
+        text-align: center;
+      }
+
+      .box {
+        margin: 1.25rem;
+        display: inline-block;
+        background-color: white;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+      }
+
+      .box1 {
+        width: 15rem;
+        height: 15rem;
+        padding: 1.25rem;
+        border: 0.3125rem solid #4caf50;
+        box-sizing: content-box;
+      }
+
+      .box2 {
+        width: 15rem;
+        height: 15rem;
+        padding: 1.875rem;
+        border: 0.625rem dashed #4caf50;
+        box-sizing: border-box;
+        margin: 2.5rem;
+      }
+
+      .box3 {
+        width: 15rem;
+        height: 15rem;
+        padding: 2.5rem;
+        border: 0.3125rem dotted #4caf50;
+        box-sizing: border-box;
+        margin: 1.25rem 3.125rem;
+      }
+
+      .box:hover {
+        transform: translateY(-0.3125rem);
+        box-shadow: 0 0.5rem 1rem rgba(76, 175, 80, 0.2);
+      }
+
+      .dimensions {
+        font-family: monospace;
+        margin-top: 0.625rem;
+        font-size: 0.875rem;
+        color: #666;
+      }
+
+      header {
+        background: white;
+        max-width: 70%;
+        padding: 1rem 2rem;
+        margin: 2rem auto;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h2 {
+        margin: 0;
+        color: #333;
+        font-size: 1.5rem;
+      }
+
+      header a {
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      header a:hover {
+        color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Return to the main page</h2>
+      <a href="index.html">-> Main Page</a>
+    </header>
+
+    <div class="container">
+      <div class="box box1">
+        <p>Box 1</p>
+        <p class="dimensions">
+          Content-box<br />
+          Width: 200px<br />
+          + Padding: 40px<br />
+          + Border: 10px<br />
+          = Total: 250px
+        </p>
+      </div>
+
+      <div class="box box2">
+        <p>Box 2</p>
+        <p class="dimensions">
+          Border-box<br />
+          Total: 200px<br />
+          (includes padding<br />
+          and border)
+        </p>
+      </div>
+
+      <div class="box box3">
+        <p>Box 3</p>
+        <p class="dimensions">
+          Border-box<br />
+          Different margins<br />
+          20px top/bottom<br />
+          50px left/right
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

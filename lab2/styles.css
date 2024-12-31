@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+a:active,
+a:link,
+a:visited {
+  color: #333;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 3rem auto;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab2 / Exercise 6</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .comments-container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      hr {
+        border: 0;
+        margin: 2rem 0;
+        height: 2px;
+        /* I want the linear gradient to be in green */
+
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 128, 0, 0),
+          rgba(0, 128, 0, 0.75),
+          rgba(0, 128, 0, 0)
+        );
+      }
+
+      article.comment {
+        background: white;
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      .comment-form {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 5px;
+        margin-top: 30px;
+        background-image: url("more-leaves.png");
+      }
+
+      .comment-form h2 {
+        margin: 1rem;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+        padding: 1rem;
+      }
+
+      input,
+      textarea {
+        padding: 0.5rem;
+        width: 100%;
+        display: block;
+        margin: 0.3rem auto;
+        resize: none;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      button {
+        background: #4caf50;
+        display: block;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        margin-left: auto;
+        cursor: pointer;
+      }
+
+      header {
+        background: white;
+        max-width: 800px;
+        padding: 1rem 2rem;
+        margin: 2rem auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h2 {
+        margin: 0;
+        color: #2c3e50;
+      }
+
+      header a {
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      header a:hover {
+        color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Return to the main page</h2>
+      <a href="index.html">-> Main Page</a>
+    </header>
+    <main class="comments-container">
+      <h1>Blog Comments</h1>
+
+      <section class="comments-list">
+        <article class="comment">
+          <div class="comment-header">
+            <h3>Kylian Mbappe</h3>
+            <time datetime="2024-03-10">January 10, 2025</time>
+          </div>
+          <p>What a beautiful day, I hope every one here enjoying this day.</p>
+        </article>
+
+        <article class="comment">
+          <div class="comment-header">
+            <h3>Ahmed Essam</h3>
+            <time datetime="2024-03-09">January 9, 2025</time>
+          </div>
+          <p>
+            I've bought the laptop I've dreamt so far, I wrote this to express
+            my gratitude to every one help me learn and help me finding the job
+            that makes my financially stable.
+          </p>
+        </article>
+      </section>
+
+      <hr />
+
+      <article class="comment-form">
+        <h2>Add a Comment</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+          </div>
+
+          <button type="submit">Post Comment</button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
