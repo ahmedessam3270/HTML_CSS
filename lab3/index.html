@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Web Dev Lab</h1>
+      <h2>Learning HTML & CSS</h2>
+    </header>
+
+    <nav id="main-nav">
+      <a href="#profile">Profile</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#form">Contact</a>
+      <a href="#food-lists">Foods</a>
+    </nav>
+
+    <main>
+      <section id="profile">
+        <div class="profile-card">
+          <img
+            src="—Pngtree—user about me_16023014 (1).png"
+            alt="Profile Picture"
+          />
+          <h2>Ahmed Essam</h2>
+          <p>Software Engineer</p>
+          <button class="profile-btn">Connect</button>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="gallery-container">
+          <figure>
+            <img
+              src="fariez-nurkholiq-00c1oHuQsnI-unsplash.jpg"
+              alt="Image 1"
+            />
+            <figcaption>Nature View</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="new-york-city-united-states-november-2-2017-city-life-in-times-square-at-daytime-MC94J8.jpg"
+              alt="Image 2"
+            />
+            <figcaption>City Life</figcaption>
+          </figure>
+          <figure>
+            <img src="iStock-MF3d-1361008761-696x392.jpg" alt="Image 3" />
+            <figcaption>Technology</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="food-lists">
+        <h2>Favorite Foods</h2>
+        <ul class="food-list">
+          <li>
+            Pizza
+            <ul>
+              <li>Mozzarella cheese</li>
+              <li>Tomato sauce</li>
+            </ul>
+          </li>
+          <li>
+            Sushi
+            <ul>
+              <li>Fresh salmon</li>
+              <li>Sushi rice</li>
+            </ul>
+          </li>
+          <li>
+            Pasta
+            <ul>
+              <li>Fresh pasta</li>
+              <li>Alfredo sauce</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="form">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="language">Favorite Programming Language:</label>
+            <select id="language">
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Skill Level:</p>
+            <input type="radio" id="beginner" name="skill" value="beginner" />
+            <label for="beginner">Beginner</label>
+            <input
+              type="radio"
+              id="intermediate"
+              name="skill"
+              value="intermediate"
+            />
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="skill" value="advanced" />
+            <label for="advanced">Advanced</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Web Development Lab. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
